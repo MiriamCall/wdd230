@@ -1,0 +1,25 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header,
+main,
+footer {
+  width: 640;
+  margin: 1rem auto;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: lightblue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section {
+  padding: 1rem;
+  background-color: white;
+}
