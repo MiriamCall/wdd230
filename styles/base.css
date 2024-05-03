@@ -1,7 +1,52 @@
+/******************************************************************************
+Table of Contents:
+    1. Global Styles
+    2. Header Styles
+    3. Nav Styles
+    4. Main Styles
+    5. Footer Styles
+*******************************************************************************/
+
+/*******************************************************************************
+ Global Styles 
+*******************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* html selectors */
-/* class selectors */
-/* id selectors */
+
+body {
+  grid-template-columns: 1fr;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*******************************************************************************
+ Header Styles
+*******************************************************************************/
+header {
+  background-color: #1d4d72;
+  color: white;
+  grid-template-columns: auto 1fr;
+}
+
+/* title section */
+
+/*******************************************************************************
+ Nav Styles
+*******************************************************************************/
+nav {
+  background-color: #643219;
+  color: white;
+}
+
+/*******************************************************************************
+ Main Styles
+*******************************************************************************/
 #image {
   width: 200px;
   display: block;
@@ -11,19 +56,15 @@
   margin-right: auto;
 }
 
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 section {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
+}
+
+h1 {
+  text-decoration: underline;
+  padding: auto;
 }
 
 h2 {
@@ -44,23 +85,6 @@ article {
   background-color: yellow;
 }
 
-/* .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-nav {
-  background-color: #643219;
-  color: white;
-}
-
-header {
-  background-color: #1d4d72;
-  color: white;
-  grid-template-columns: auto 1fr;
-}
-
 span {
   display: block;
   font-size: 2rem;
@@ -68,15 +92,9 @@ span {
   text-align: center;
 }
 
-h1 {
-  text-decoration: underline;
-  padding: auto;
-}
-
-body {
-  grid-template-columns: 1fr;
-}
-
+/*******************************************************************************
+ Footer Styles
+*******************************************************************************/
 footer {
   background-color: #1d4d72;
   color: white;
