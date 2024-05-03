@@ -1,3 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* html selectors */
+/* class selectors */
+/* id selectors */
+#image {
+  width: 200px;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+h2 {
+  text-align: center;
+  background-color: #1d4d72;
+  color: white;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+article {
+  background-color: yellow;
+}
+
+/* .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+nav {
+  background-color: #643219;
+  color: white;
+}
+
+header {
+  background-color: #1d4d72;
+  color: white;
+  grid-template-columns: auto 1fr;
+}
+
+span {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 h1 {
-  color: blue;
+  text-decoration: underline;
+  padding: auto;
+}
+
+body {
+  grid-template-columns: 1fr;
+}
+
+footer {
+  background-color: #1d4d72;
+  color: white;
 }
