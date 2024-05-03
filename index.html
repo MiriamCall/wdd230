@@ -15,42 +15,42 @@
     />
     <meta author="Miriam Call" />
     <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/default.js" defer></script>
   </head>
   <body>
     <header class="header">
       <img class="profile-img" id="image" src="images/profile.jpg" alt="profile" />
       <span class="profile-name">Miriam Call</span>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="#">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a class="nav-menu-item-link" href="#">Home</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-item-link" href="#">Chamber</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-item-link" href="#">Site Plan</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-item-link" href="#">Form</a></li>
       </ul>
     </nav>
-    <main>
-      <h1>WDD 230: Web Frontend Development</h1>
-      <section class="card">
-        <h2>Learning Activities</h2>
-        <ul>
-          <li><a>Week 01: HTML</a></li>
-          <li><a>Week 02: HTML</a></li>
-          <li><a>Week 03: HTML</a></li>
-          <li><a>Week 04: HTML</a></li>
-          <li><a>Week 05: HTML</a></li>
-          <li><a>Week 06: HTML</a></li>
+    <main class="main">
+      <h1 class="main-title">WDD 230: Web Frontend Development</h1>
+      <section class="card learning-card">
+        <h2 class="learning-card-title">Learning Activities</h2>
+        <ul class="learning-card-list">
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 01: HTML</a></li>
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 02: HTML</a></li>
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 03: HTML</a></li>
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 04: HTML</a></li>
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 05: HTML</a></li>
+          <li class="learning-card-list-item"><a class="learning-card-list-item-link">Week 06: HTML</a></li>
         </ul>
       </section>
-      <section class="card">
-        <h2>Information</h2>
-        <p>Weather</p>
-        <p># of visits to page</p>
+      <section class="card information-card">
+        <h2 class="information-card-title">Information</h2>
+        <p class="information-card-weather-text">Weather</p>
+        <p class="information-card-visits-text"># of visits to page</p>
     </main>
-    <footer>
-      <p>&copy; 2024. Miriam Call. United States of America.</p>
-      <p>Last Updated: <span id="lastModified"></span></p>
+    <footer class="footer">
+      <p class="footer-copyright-text">&copy; 2024. Miriam Call. United States of America.</p>
+      <p class="footer-last-updated">Last Updated: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/default.js"></script>
   </body>
 </html>
