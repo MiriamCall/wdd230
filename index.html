@@ -15,7 +15,6 @@
     />
     <meta author="Miriam Call" />
     <link rel="stylesheet" href="styles/base.css" />
-    <script src="scripts/default.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -47,34 +46,36 @@
     </nav>
     <main class="main">
       <h1 class="main-title">WDD 230: Web Frontend Development</h1>
-      <section class="card learning-card">
-        <h2 class="learning-card-title">Learning Activities</h2>
-        <ul class="learning-card-list">
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 01: HTML</a>
-          </li>
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 02: HTML</a>
-          </li>
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 03: HTML</a>
-          </li>
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 04: HTML</a>
-          </li>
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 05: HTML</a>
-          </li>
-          <li class="learning-card-list-item">
-            <a class="learning-card-list-item-link">Week 06: HTML</a>
-          </li>
-        </ul>
-      </section>
-      <section class="card information-card">
-        <h2 class="information-card-title">Information</h2>
-        <p class="information-card-weather-text">Weather</p>
-        <p class="information-card-visits-text"># of visits to page</p>
-      </section>
+      <div>
+        <section class="card learning-card">
+          <h2 class="card-title learning-card-title">Learning Activities</h2>
+          <ul class="learning-card-list">
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 01: HTML</a>
+            </li>
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 02: HTML</a>
+            </li>
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 03: HTML</a>
+            </li>
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 04: HTML</a>
+            </li>
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 05: HTML</a>
+            </li>
+            <li class="learning-card-list-item">
+              <a class="learning-card-list-item-link">Week 06: HTML</a>
+            </li>
+          </ul>
+        </section>
+        <section class="card information-card">
+          <h2 class="card-title information-card-title">Information</h2>
+          <p class="information-card-weather-text">Weather</p>
+          <p class="information-card-visits-text"># of visits to page</p>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-copyright-text">
@@ -84,5 +85,6 @@
         Last Updated: <span id="lastModified"></span>
       </p>
     </footer>
+    <script src="scripts/default.js"></script>
   </body>
 </html>
