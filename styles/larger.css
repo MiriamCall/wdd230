@@ -3,6 +3,12 @@
     grid-template-columns: 2fr 1fr;
   }
 
+  .card-parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+  }
+
   ul {
     flex-direction: row;
     justify-content: space-around;
