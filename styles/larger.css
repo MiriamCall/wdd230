@@ -1,14 +1,28 @@
-@media screen and (min-width: 32em) {
-  .card {
-    grid-template-columns: 2fr 1fr;
-  }
+/******************************************************************************
+Table of Contents:
+    1. Global Styles
+       1.1 Media query for screens larger than 32em (~520px)
+    2. Header Styles
+    3. Nav Styles
+    4. Main Styles
+    5. Footer Styles
 
+*******************************************************************************/
+
+/*******************************************************************************
+ Media Queries Styles
+*******************************************************************************/
+
+/* 1.1 Media query for screens larger than 32em (~520px) */
+@media screen and (min-width: 32em) {
+  /* 3.2 Change card parent class styles to fit side by side */
   .card-parent {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 1rem;
   }
 
+  /* 2.3 Change nav menu list styles to fit side by side */
   .nav-menu {
     flex-direction: row;
     justify-content: space-around;

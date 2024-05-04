@@ -52,40 +52,36 @@
           <h2 class="card-title learning-card-title">Learning Activities</h2>
           <ul class="learning-card-list">
             <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 01: HTML</a>
+              Week 01:
+              <a class="learning-link" href="holy-grail.html">Holy Grail</a> |
+              <a class="learning-link" href="media-query.html"> Media Query</a>
+              |
+              <a class="learning-link" href="chamber.html">Chamber Site Plan</a>
             </li>
-            <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 02: HTML</a>
-            </li>
-            <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 03: HTML</a>
-            </li>
-            <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 04: HTML</a>
-            </li>
-            <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 05: HTML</a>
-            </li>
-            <li class="learning-card-list-item">
-              <a class="learning-card-list-item-link">Week 06: HTML</a>
-            </li>
+            <li class="learning-card-list-item">Week 02:</li>
+            <li class="learning-card-list-item">Week 03:</li>
+            <li class="learning-card-list-item">Week 04:</li>
+            <li class="learning-card-list-item">Week 05:</li>
+            <li class="learning-card-list-item">Week 06:</li>
           </ul>
         </section>
         <section class="card information-card">
           <h2 class="card-title information-card-title">Information</h2>
-          <p class="information-card-weather-text">Weather</p>
-          <p class="information-card-visits-text"># of visits to page</p>
+          <div class="info-container">
+            <p class="information-card-weather-text">Weather</p>
+            <p class="information-card-visits-text"># of visits to page</p>
+          </div>
         </section>
       </div>
     </main>
     <footer class="footer">
       <p class="footer-copyright-text">
-        &copy; 2024. Miriam Call. United States of America.
+        &copy;<span id="year"></span> | Miriam Call | USA
       </p>
       <p class="footer-last-updated">
         Last Updated: <span id="lastModified"></span>
       </p>
     </footer>
-    <script src="scripts/default.js"></script>
+    <script src="scripts/getDates.js"></script>
   </body>
 </html>
