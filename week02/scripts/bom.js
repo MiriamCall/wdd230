@@ -28,15 +28,18 @@ button.addEventListener("click", () => {
     deleteButton.addEventListener("click", () => {
       list.removeChild(li);
 
-      //send focus to input element
-      input.focus();
-
-      //change the input value to nothing or the empty string to clean up the interface for the user
-      input.value = "";
+      clearInput();
     });
-
-    input.value = "";
   } else {
     input.focus();
   }
+  clearInput();
 });
+
+function clearInput() {
+  //send focus to input element
+  input.focus();
+
+  //change the input value to nothing or the empty string to clean up the interface for the user
+  input.value = "";
+}
