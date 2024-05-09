@@ -4,7 +4,10 @@ const button = document.querySelector("button");
 
 const list = document.querySelector("#list");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  //prevent the default action of the button
+  e.preventDefault();
+
   if (input.value) {
     // create an li element
     const li = document.createElement("li");
