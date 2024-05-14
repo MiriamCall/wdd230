@@ -1,2 +1,103 @@
 /* Global Styles */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* header styles */
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  /* position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: black;
+}
+
+.join-button {
+  background-color: #60993e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Nav menu styles */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* nav menu item styles */
+.nav-menu-item {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* nav menu link styles */
+.nav-menu-item-link {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+/* nav menu item hover styles */
+.nav-menu-item:hover {
+  background-color: #a1e44d;
+}
+
+/* nav menu active styles */
+.active {
+  background-color: #60993e;
+}
+
+main h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #60993e;
+}
+
+/* Main Title Styles */
+.card-title {
+  text-decoration: underline;
+  margin: 1rem 2vw;
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+/* Card Parent Container Styles */
+.card-parent {
+  margin: 1rem 2vw;
+}
+
+/* Card Title Styles */
+.card-title {
+  text-align: center;
+  background-color: white;
+  color: #60993e;
+  padding: 1rem;
+}
