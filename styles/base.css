@@ -119,6 +119,26 @@ li {
   background-color: #643219;
 }
 
+#menu {
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  background-color: #1d4d72;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
+}
 /*******************************************************************************
  Main Styles
 *******************************************************************************/

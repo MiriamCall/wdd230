@@ -23,8 +23,17 @@ Table of Contents:
   }
 
   /* 2.3 Change nav menu list styles to fit side by side */
+
   .nav-menu {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
   }
 }
