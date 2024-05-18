@@ -52,6 +52,24 @@ li {
   list-style-type: none;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #000;
+  color: #fff;
+}
+
+body.dark-mode .card {
+  border-color: white;
+}
+
+body.dark-mode .learning-link {
+  color: #0ac2ff; /* This color passes AA for large text and AAA for normal text against a black background */
+}
+
+body.dark-mode .learning-link:visited {
+  color: #f94cff; /* This color passes AA for large text and AAA for normal text against a black background */
+}
+
 /*******************************************************************************
  Header Styles
 *******************************************************************************/
@@ -154,7 +172,7 @@ li {
 /* 4.3 Card Styles */
 .card {
   border: 1px solid black;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem 0;
@@ -188,7 +206,6 @@ li {
 /* 4.9 Learning Card List Item Link Styles */
 .learning-card-list-item-link {
   text-decoration: none;
-  color: black;
   display: flex;
   justify-content: left;
   padding: 0.5rem;

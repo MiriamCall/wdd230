@@ -3,13 +3,11 @@ const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 
 modeButton.addEventListener("click", () => {
-  if (modeButton.textContent.includes("🕶️")) {
-    body.style.background = "#000";
-    body.style.color = "#fff";
+  if (modeButton.textContent.includes("🌙")) {
+    body.classList.add("dark-mode");
     modeButton.textContent = "🔆";
   } else {
-    body.style.background = "#fff";
-    body.style.color = "#000";
-    modeButton.textContent = "🕶️";
+    body.classList.remove("dark-mode");
+    modeButton.textContent = "🌙";
   }
 });
