@@ -8,14 +8,10 @@ ul {
 
 /* header styles */
 .header {
-  position: relative;
   text-align: center;
-  background-image: url("../images/hero-img.jpg");
-  opacity: 0.5;
+  background-image: url("../images/rexburg_image.webp");
   background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 7rem;
+  height: 30vh;
 }
 
 .join-button-container {
@@ -23,11 +19,12 @@ ul {
 }
 
 .main-title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin: 1rem 0;
   color: black;
-  padding: 1rem;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 .join-button {
@@ -43,7 +40,7 @@ ul {
 /* Nav menu styles */
 .nav-menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -103,9 +100,6 @@ main h1 {
 }
 
 /* Main Title Styles */
-.card-title {
-  margin: 1rem 2vw;
-}
 
 /* Card Styles */
 .card {
