@@ -10,37 +10,50 @@ ul {
 .header {
   position: relative;
   text-align: center;
+  background-image: url("../images/hero-img.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 7rem;
 }
 
-.hero-img {
-  max-width: 100%;
-  height: auto;
+.join-button-container {
+  margin: 1rem;
 }
 
 .main-title {
-  /* position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   font-size: 2rem;
+  font-weight: 700;
   margin: 1rem 0;
   color: black;
+  padding: 1rem;
 }
 
 .join-button {
-  background-color: #60993e;
+  background-color: #006eb8;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 /* Nav menu styles */
 .nav-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+/* nav menu container styles */
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
 }
 
 /* nav menu item styles */
@@ -48,6 +61,7 @@ ul {
   padding: 0.5rem;
   width: 100%;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* nav menu link styles */
@@ -59,24 +73,24 @@ ul {
 
 /* nav menu item hover styles */
 .nav-menu-item:hover {
-  background-color: #a1e44d;
+  background-color: #006eb8;
 }
 
 /* nav menu active styles */
 .active {
-  background-color: #60993e;
+  background-color: #006eb8;
 }
 
 main h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #60993e;
+  background-color: #006eb8;
+  font-size: 3rem;
 }
 
 /* Main Title Styles */
 .card-title {
-  text-decoration: underline;
   margin: 1rem 2vw;
 }
 
@@ -97,7 +111,15 @@ main h1 {
 /* Card Title Styles */
 .card-title {
   text-align: center;
-  background-color: white;
-  color: #60993e;
+  background-color: #006eb8;
+  color: white;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #006eb8;
+  color: white;
+  text-align: center;
   padding: 1rem;
 }

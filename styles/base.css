@@ -97,6 +97,7 @@ li {
 
 /* 3.3 nav menu item styles */
 .nav-menu-item {
+  display: none;
   padding: 0.5rem;
   width: 100%;
   text-align: center;
@@ -132,16 +133,12 @@ li {
   content: "≡";
 }
 
-#menu.show li {
+.show li {
   display: block;
 }
 
 #menu.show::before {
-  content: "X";
-}
-
-.nav.show {
-  display: block;
+  content: "x";
 }
 /*******************************************************************************
  Main Styles

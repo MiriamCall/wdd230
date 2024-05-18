@@ -1,0 +1,7 @@
+/* Navigation */
+@media screen and (min-width: 32em) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
