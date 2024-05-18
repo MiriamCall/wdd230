@@ -1,7 +1,21 @@
 /* Navigation */
 @media screen and (min-width: 32em) {
   .nav-menu {
-    flex-direction: row;
-    justify-content: space-around;
+    display: flex;
+  }
+
+  .nav-menu-item {
+    display: block;
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
   }
 }
