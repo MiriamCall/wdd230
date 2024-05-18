@@ -29,6 +29,10 @@ Table of Contents:
     justify-content: space-around;
   }
 
+  .nav-menu-item {
+    display: block;
+  }
+
   .nav a {
     text-align: center;
   }
