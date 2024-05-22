@@ -3,5 +3,4 @@ function getLastModified() {
   document.querySelector("#lastModified").innerHTML = date.toLocaleString();
 }
 
-getYear();
 getLastModified();
