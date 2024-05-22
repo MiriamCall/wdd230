@@ -133,3 +133,9 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* discover page styles */
+.discover-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
