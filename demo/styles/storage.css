@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 400px;
+}
+
+input,
+button {
+  margin: 1rem;
+}
