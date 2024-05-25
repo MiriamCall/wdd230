@@ -10,34 +10,38 @@ const list = document.querySelector("#list");
 // Get chapter list from local storage
 let chaptersArray = getChapterList() || [];
 
+// populate the displayed list of chapters
 chaptersArray.forEach((chapter) => {
   displayList(chapter);
 });
 
 button.addEventListener("click", () => {
   if (input.value != "") {
-    displayList(input.value);
-    chaptersArray.push(input.value);
-    setChapterList();
-    input.value = "";
-    input.focus();
+    // make sure the input is not empty
+    displayList(input.value); // call the function that outputs the submitted chapter
+    chaptersArray.push(input.value); // add the chapter to the array
+    setChapterList(); // update the localStorage with the new array
+    input.value = ""; // clear the input
+    input.focus(); // set the focus back to the input
   }
 });
 
 function displayList(item) {
   let li = document.createElement("li");
   let deletebutton = document.createElement("button");
-  li.textContent = item;
+  li.textContent = item; // note the use of the displayList parameter 'item'
   deletebutton.textContent = "❌";
-  deletebutton.classList.add("delete");
+  deletebutton.classList.add("delete"); // this references the CSS rule .delete{width:fit-content;} to size the delete button
   li.append(deletebutton);
   list.append(li);
   deletebutton.addEventListener("click", function () {
     list.removeChild(li);
-    deleteChapter(li.textContent);
-    input.focus();
+    deleteChapter(li.textContent); // note this new function that is needed to remove the chapter from the array and localStorage.
+    input.focus(); // set the focus back to the input
   });
-  console.log("The chapter list is now: " + chaptersArray);
+  console.log(
+    "The chapter list is now: " + chaptersArray
+  ); /* this is a console log to show the array of chapters */
 }
 
 function setChapterList() {
