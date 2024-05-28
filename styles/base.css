@@ -158,6 +158,25 @@ body.dark-mode .learning-link:visited {
 #menu.show::before {
   content: "x";
 }
+
+/* hero styles */
+
+/* hero text styles */
+.herolable {
+  display: flex;
+  justify-content: left;
+  background: radial-gradient(#fff, #4d5b97);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.herolable p {
+  font-size: 1.5rem;
+  color: #000;
+}
+
 /*******************************************************************************
  Main Styles
 *******************************************************************************/
@@ -225,6 +244,7 @@ body.dark-mode .learning-link:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 /* 4.11 Information Card Weather Text Styles */
