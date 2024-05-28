@@ -220,6 +220,13 @@ body.dark-mode .learning-link:visited {
   padding: 1rem;
 }
 
+/* google map styles */
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 4.11 Information Card Weather Text Styles */
 
 /*******************************************************************************
