@@ -1,13 +1,18 @@
-const visits = document.querySelector(".visits");
+function getVisitCount() {
+  // get visit count from local storage
+  let count = localStorage.getItem("visitCount");
 
-let numVisits = Number(localStorage.getItem("numVisits")) || 0;
+  if (count) {
+    count++;
+  } else {
+    count = 1;
+  }
 
-if (numVisits === 0) {
-  visits.textContent = `You have visited this site ${numVisits} times`;
-} else {
-  visits.textContent = `This is your first visit, Welcome!`;
+  localStorage.setItem("visitCount", count);
+
+  return count;
 }
 
-numVisits++;
+let visitCount = getVisitCount();
 
-localStorage.setItem("numVisits-1s", numVisits);
+document.querySelector("#count").textContent = visitCount;
