@@ -162,19 +162,19 @@ body.dark-mode .learning-link:visited {
 /* hero styles */
 
 /* hero text styles */
-.herolable {
-  display: flex;
-  justify-content: left;
+.herolabel {
+  position: absolute;
+  top: 220px;
+  left: 10px;
   background: radial-gradient(#fff, #4d5b97);
   border: 1px solid rgba(0, 0, 0, 0.75);
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 0 3rem #fff;
   opacity: 0.75;
-  z-index: 1;
 }
 
-.herolable p {
-  font-size: 1.5rem;
+.herolabel p {
+  font-size: 1rem;
   color: #000;
 }
 

@@ -40,4 +40,20 @@ Table of Contents:
   #menu {
     display: none;
   }
+
+  .herolabel {
+    position: absolute;
+    top: 320px;
+    left: 300px;
+    background: radial-gradient(#fff, #4d5b97);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+  }
+
+  .herolabel p {
+    font-size: 2rem;
+    color: #000;
+  }
 }
