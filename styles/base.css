@@ -170,6 +170,7 @@ body.dark-mode .learning-link:visited {
   padding: 1.5rem;
   box-shadow: 0 0 3rem #fff;
   opacity: 0.75;
+  z-index: 1;
 }
 
 .herolable p {
