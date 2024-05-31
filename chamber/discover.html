@@ -38,11 +38,11 @@
     <nav class="nav">
       <span id="menu"></span>
       <ul class="nav-menu">
-        <li class="nav-menu-item active">
-          <a class="nav-menu-item-link" href="#">Home</a>
-        </li>
         <li class="nav-menu-item">
-          <a class="nav-menu-item-link" href="#">About</a>
+          <a class="nav-menu-item-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-menu-item active">
+          <a class="nav-menu-item-link" href="./discover.html">Discover</a>
         </li>
         <li class="nav-menu-item">
           <a class="nav-menu-item-link" href="#">Contact</a>
@@ -51,144 +51,126 @@
     </nav>
 
     <header class="header">
-      <h1 class="main-title">Rexburg Chamber of Commerce</h1>
-      <div class="join-button-container">
-        <a class="join-button" href="#">Join Now</a>
-      </div>
+      <h1 class="main-title">Discover Rexburg</h1>
     </header>
 
     <main class="discover-main">
       <p id="message"></p>
-      <div class="discover-sections">
-        <h2>Discover Rexburg</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem optio
-          velit odit soluta veniam sit dignissimos aliquam eligendi inventore
-          quia esse provident quidem harum quisquam sint, accusantium culpa
-          repudiandae.
-        </p>
-        <section class="calander">
 
+      <h2>Rexburg</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem optio
+        velit odit soluta veniam sit dignissimos aliquam eligendi inventore quia
+        esse provident quidem harum quisquam sint, accusantium culpa
+        repudiandae.
+      </p>
+      <div class="discover-sections">
+        <section class="discover-card card">
+          <h2 class="card-title">Places to visit</h2>
+          <p>Nature Park, Rexburg Temple</p>
         </section>
-      <div class="pictures">
-        <picture>
-          <img
-            src="images/rexburg-rapids.webp"
-            alt="Rexburg Rapids"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
+        <section class="discover-card card">
+          <h2 class="card-title">Things to do</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
+            Rexburg Rapids, Teton Vu Drive-In, Paramount 5 Movie Theater,
+            Fatcats, Carousel, Fatcats
           </p>
-        </picture>
-        <picture
-          ><img
-            src="images/nature-park.webp"
-            alt="nature park"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture
-        >
-        <picture
-          ><img
-            src="images/drive-in.webp"
-            alt="Teton Vu Drive-In"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture
-        >
-        <picture
-          ><img
-            src="images/paramount.webp"
-            alt="Paramount 5"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture
-        >
-        <picture
-          ><img
-            src="images/fatcats.webp"
-            alt="Fatcats"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture
-        >
-        <picture
-          ><img
-            src="images/carousel.webp"
-            alt="carousel"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture
-        >
-        <picture
-          ><img
-            src="images/gravity-factory.webp"
-            alt="Gravity Factory"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture>
+        </section>
+        <section class="discover-card card">
+          <h2 class="card-title">Events</h2>
+          <p>Independence Day Parade, Farmers market</p>
+        </section>
+
+        <div class="pictures card">
+          <picture>
+            <img
+              class="hover"
+              src="images/rexburg-rapids.webp"
+              alt="Rexburg Rapids"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Rexburg Rapids</p>
+          </picture>
+          <picture>
+            <img
+              class="hover"
+              src="images/nature-park.webp"
+              alt="nature park"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Nature Park</p></picture
+          >
+          <picture>
+            <img
+              class="hover"
+              src="images/drive-in.webp"
+              alt="Teton Vu Drive-In"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Teton Vu Drive-In</p></picture
+          >
+          <picture>
+            <img
+              class="hover"
+              src="images/paramount.webp"
+              alt="Paramount 5"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Pramount 5 Movie Theater</p></picture
+          >
+          <picture>
+            <img
+              class="hover"
+              src="images/fatcats.webp"
+              alt="Fatcats"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Fatcats</p></picture
+          >
+          <picture>
+            <img
+              class="hover"
+              src="images/carousel.webp"
+              alt="carousel"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Carousel</p></picture
+          >
           <picture
-          ><img
-            src="images/rexburg-temple.webp"
-            alt="RExburg Temple"
-            loading="lazy"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
-            optio velit odit soluta veniam sit dignissimos aliquam eligendi
-            inventore quia esse provident quidem harum quisquam sint,
-            accusantium culpa repudiandae.
-          </p></picture>
+            ><img
+              class="hover"
+              src="images/gravity-factory.webp"
+              alt="Gravity Factory"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Gravity Factory</p></picture
+          >
+          <picture>
+            <img
+              class="hover"
+              src="images/rexburg-temple.webp"
+              alt="Rexburg Temple"
+              loading="lazy"
+              width="400"
+              height="auto"
+            />
+            <p>Rexburg Temple</p></picture
+          >
+        </div>
       </div>
     </main>
     <footer>

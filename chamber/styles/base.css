@@ -37,6 +37,10 @@ ul {
   font-size: 1.5rem;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* Nav menu styles */
 
 /* nav menu item styles */
@@ -69,6 +73,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: tomato;
 }
 
 /* nav menu container styles */
@@ -101,7 +106,18 @@ main h1 {
   font-size: 3rem;
 }
 
+main {
+  padding: 1rem;
+}
+
 /* Main Title Styles */
+
+/* discover h2 */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
 
 /* Card Styles */
 .card {
@@ -109,7 +125,8 @@ main h1 {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  margin: 1rem 0;
+  margin: 0rem 1rem 1rem 1rem;
+  text-align: center;
 }
 
 /* Card Parent Container Styles */
@@ -137,5 +154,10 @@ footer {
 /* discover page styles */
 .discover-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+}
+
+#message {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
 }

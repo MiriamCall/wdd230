@@ -1,9 +1,5 @@
 /* Navigation */
 @media screen and (min-width: 32em) {
-  /* .nav-menu {
-    display: flex;
-  } */
-
   .nav-menu-item {
     display: block;
   }
@@ -19,5 +15,15 @@
 
   #menu {
     display: none;
+  }
+
+  .discover-sections {
+    column-count: 2;
+    column-gap: normal;
+  }
+
+  /* picture hover */
+  .hover:hover {
+    box-shadow: 0 0 100px tomato;
   }
 }

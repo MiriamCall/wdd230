@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Columns</title>
+    <style>
+      .two-columns {
+        column-count: 2; /* This divides content into two columns */
+        column-gap: 20px; /* Adjust the gap between columns */
+      }
+      .first-column {
+        break-inside: avoid; /* Prevent content from breaking inside this column */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="two-columns">
+      <div class="first-column">
+        <p>This content goes into the first column.</p>
+        <p>More content for the first column.</p>
+      </div>
+      <div>
+        <p>This content goes into the second column.</p>
+        <p>More content for the second column.</p>
+      </div>
+    </div>
+  </body>
+</html>
