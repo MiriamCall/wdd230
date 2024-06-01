@@ -23,7 +23,8 @@
   }
 
   /* picture hover */
-  .hover:hover {
-    box-shadow: 0 0 100px tomato;
+  .attraction-img:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
 }
