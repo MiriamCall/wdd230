@@ -1,0 +1,39 @@
+head {
+  background-color: black;
+  color: white;
+}
+
+:root {
+}
+
+table {
+  margin: 10px auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: black;
+  font-size: medium;
+}
+
+tr:first-child th {
+  background-color: black;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid black 1px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: zebra;
+}
