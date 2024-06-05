@@ -60,7 +60,7 @@
         If you are interested in joining the Chamber, please fill out the form
         below. We look forward to working with you!
       </p>
-      <form action="thankyou.html" method="get">
+      <form action="thankyou.html" method="get" class="wf1">
         <fieldset>
           <label>First Name* <input type="text" name="fname" required /></label>
           <label>Last Name*<input type="text" name="lname" required /></label>
@@ -81,10 +81,11 @@
               required
           /></label>
           <label
-            >Business/Organization's Name
+            >Business/Organization's Name*
             <input type="text" name="business" required
           /></label>
-          <legend>Membership Level</legend>
+          <!-- <legend>
+            Membership -->
           <label
             ><input type="radio" name="membership" value="NP membership" />NP
             Membership is for non profit organizations and there is no
@@ -102,6 +103,7 @@
             ><input type="radio" name="membership" value="gold" />Gold
             Membership</label
           >
+          <!-- </legend> -->
           <label>
             <input type="text" name="description" />Business/Organization's
             Description</label
