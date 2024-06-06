@@ -3,9 +3,6 @@ head {
   color: white;
 }
 
-:root {
-}
-
 table {
   margin: 10px auto;
   border: 1px solid black;
@@ -48,4 +45,8 @@ tbody tr:nth-child(even) {
 
 .blank {
   background-color: black;
+}
+
+.bold {
+  font-weight: bold;
 }
