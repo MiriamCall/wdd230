@@ -1,3 +1,5 @@
+// Password Validation
+
 const p1 = document.querySelector("#password");
 const p2 = document.querySelector("#password2");
 const message = document.querySelector("#message");
@@ -19,6 +21,7 @@ function checkSame() {
   }
 }
 
+// Page Rating
 const rangevalue = document.querySelector("#rangevalue");
 const range = document.querySelector("#rating");
 
