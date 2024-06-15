@@ -168,9 +168,13 @@ footer {
 
 /* Join page styles */
 
+.join-page-main {
+  padding: 0 1rem 1rem;
+}
+
 /* Form Styles */
 .wf1 fieldset {
-  margin: 2rem 0;
+  margin: 1rem 0;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0.5rem 2%;
