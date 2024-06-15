@@ -172,6 +172,12 @@ footer {
   padding: 0 1rem 1rem;
 }
 
+.join-info {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* Form Styles */
 .wf1 fieldset {
   margin: 1rem 0;
@@ -198,6 +204,7 @@ footer {
   color: blue;
   font-size: 0.9rem;
 }
+
 .wf1 input[type="text"],
 .wf1 input[type="email"],
 .wf1 input[type="tel"],
@@ -211,8 +218,8 @@ footer {
   border-radius: 6px;
   padding: 0.75rem;
   color: #555;
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 600px;
   appearance: none;
 }
 
@@ -227,10 +234,13 @@ footer {
   border: none;
   border-radius: 6px;
   padding: 0.75rem 1.5rem;
-  width: 96%;
+  width: 40%;
   max-width: 400px;
   cursor: pointer;
-  margin: -1rem 2% 2rem 2%;
+}
+
+.input-field {
+  max-width: 80%;
 }
 
 /* .wf1 input:required {
@@ -239,4 +249,15 @@ footer {
 
 .wf1 input:required:valid {
   border: solid 2px green;
+}
+
+main p {
+  padding: 0 1rem;
+}
+
+.thank-you-joining {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: white;
 }
