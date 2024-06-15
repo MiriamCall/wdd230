@@ -194,9 +194,10 @@ footer {
 
 .wf1 label {
   display: block;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   color: black;
   font-size: 0.9rem;
+  padding-bottom: 0.5rem;
 }
 
 .wf1 div {

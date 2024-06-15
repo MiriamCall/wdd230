@@ -74,12 +74,13 @@
                 name="lname"
                 required
             /></label>
-            <!-- add restrictions to Title/positions -->
             <label
               >Title or Position<input
                 class="input-field"
                 type="text"
                 name="title"
+                pattern="^[A-Za-z-\s]{7,}$"
+                title="Please enter a title or position with at least seven characters, containing only letters, hyphens, and spaces."
             /></label>
             <label
               >Email*<input
@@ -94,17 +95,16 @@
                 class="input-field"
                 type="tel"
                 name="phone"
-                placeholder="1235551234"
+                placeholder="123-555-1234"
                 required
             /></label>
             <label
               >Business/Organization's Name*
               <input class="input-field" type="text" name="business" required
             /></label>
-            <!-- <legend>
-            Membership -->
-            <label
-              ><input
+            <label>Membership Level</label>
+            <label>
+              <input
                 class="input-field"
                 type="radio"
                 name="membership"
@@ -137,21 +137,16 @@
               />Gold Membership</label
             >
             <!-- </legend> -->
-            <label>
-              <input
-                class="input-field"
-                type="text"
-                name="description"
-              />Business/Organization's Description</label
-            >
+            <label
+              >Business/Organization's Description
+              <input class="input-field" type="text" name="description"
+            /></label>
             <input
               class="input-field"
               type="hidden"
               name="formLoadTimeStamp"
               id="formLoadTimeStamp"
             />
-
-            <!-- Time stamp -->
 
             <input class="input-field" type="submit" value="Join Now" />
           </fieldset>
