@@ -31,10 +31,10 @@
       href="images/chamber-favicon.ico"
       type="image/x-icon"
     />
-    <script src="scripts/visits.js" defer></script>
+    <script src="./scripts/hamMenu.js" defer></script>
+    <script src="./scripts/timestamp.js" defer></script>
   </head>
   <body>
-    <script src="./scripts/hamMenu.js" defer></script>
     <nav class="nav">
       <span id="menu"></span>
       <ul class="nav-menu">
@@ -60,58 +60,140 @@
         If you are interested in joining the Chamber, please fill out the form
         below. We look forward to working with you!
       </p>
-      <form action="thankyou.html" method="get" class="wf1">
-        <fieldset>
-          <label>First Name* <input type="text" name="fname" required /></label>
-          <label>Last Name*<input type="text" name="lname" required /></label>
-          <!-- add restrictions to Title/positions -->
-          <label>Title or Position<input type="text" name="title" /></label>
-          <label
-            >Email*<input
-              type="email"
-              name="email"
-              placeholder="user@gmail.com"
-              required
-          /></label>
-          <label
-            >Phone*<input
-              type="tel"
-              name="phone"
-              placeholder="1235551234"
-              required
-          /></label>
-          <label
-            >Business/Organization's Name*
-            <input type="text" name="business" required
-          /></label>
-          <!-- <legend>
+      <div class="form-columns">
+        <form action="thankyou.html" method="get" class="wf1">
+          <fieldset>
+            <label
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label>Last Name*<input type="text" name="lname" required /></label>
+            <!-- add restrictions to Title/positions -->
+            <label>Title or Position<input type="text" name="title" /></label>
+            <label
+              >Email*<input
+                type="email"
+                name="email"
+                placeholder="user@gmail.com"
+                required
+            /></label>
+            <label
+              >Phone*<input
+                type="tel"
+                name="phone"
+                placeholder="1235551234"
+                required
+            /></label>
+            <label
+              >Business/Organization's Name*
+              <input type="text" name="business" required
+            /></label>
+            <!-- <legend>
             Membership -->
-          <label
-            ><input type="radio" name="membership" value="NP membership" />NP
-            Membership is for non profit organizations and there is no
-            fee.</label
-          >
-          <label
-            ><input type="radio" name="membership" value="bronze" />Bronze
-            Membership</label
-          >
-          <label
-            ><input type="radio" name="membership" value="silver" />Silver
-            Membership</label
-          >
-          <label
-            ><input type="radio" name="membership" value="gold" />Gold
-            Membership</label
-          >
-          <!-- </legend> -->
-          <label>
-            <input type="text" name="description" />Business/Organization's
-            Description</label
-          >
-          <!-- Time stamp -->
-        </fieldset>
-        <input type="submit" value="Join Now" />
-      </form>
+            <label
+              ><input type="radio" name="membership" value="NP membership" />NP
+              Membership is for non profit organizations and there is no
+              fee.</label
+            >
+            <label
+              ><input type="radio" name="membership" value="bronze" />Bronze
+              Membership</label
+            >
+            <label
+              ><input type="radio" name="membership" value="silver" />Silver
+              Membership</label
+            >
+            <label
+              ><input type="radio" name="membership" value="gold" />Gold
+              Membership</label
+            >
+            <!-- </legend> -->
+            <label>
+              <input type="text" name="description" />Business/Organization's
+              Description</label
+            >
+            <input
+              type="hidden"
+              name="formLoadTimeStamp"
+              id="formLoadTimeStamp"
+            />
+
+            <!-- Time stamp -->
+          </fieldset>
+          <input type="submit" value="Join Now" />
+        </form>
+        <div>
+          <h2>Membership Levels</h2>
+          <p>
+            Membership levels are based on the size of your business or
+            organization. Each level offers different benefits and
+            opportunities. Please select the level that best fits your needs.
+          </p>
+        </div>
+
+        <section class="membership-card card">
+          <h2>Bronze</h2>
+          <p>
+            TOURISM – Tourism recruitment and information services are designed
+            to keep visitors in our area and increase the new dollars available
+            to Rexburg’s economy. We advertise, send out area information to
+            other visitor centers, and plan events that bring people in from all
+            over the country and, well actually, all over the world!
+          </p>
+          <p>
+            INQUIRIES – As a chamber we receive thousands of inquires a year
+            asking about businesses and services here in Rexburg. As a member,
+            you are the first recommendations that we send out. Our inquires are
+            sent by e-mail, mail and of course over the phone.
+          </p>
+          <p>
+            DISCOUNTED EVENT RATES – You may attend and reserve your booths at a
+            discount as a member. These events are attended by thousands of
+            people and are a great way to let others know about your business
+            and service.
+          </p>
+          <p>
+            CHAMBER WEBSITE – The Chamber’s new website includes information
+            about future events, new businesses, legal/legislative updates,
+            ribbon-cutting pictures and more.
+          </p>
+          <p>
+            FORUM SPOTLIGHT – You will be the featured guest in a 3-5 minute
+            “spotlight” in one of our monthly Chamber Forums.
+          </p>
+          <p>
+            RIBBON CUTTINGS – The Chamber will sponsor a ribbon cutting for your
+            business and will invite the media, the board, and the Mayor to
+            attend.
+          </p>
+        </section>
+        <section class="membership-card card">
+          <h2>Silver</h2>
+          <p>
+            FORUMS AND SEMINARS – The Chamber holds seminars and forums on
+            issues that face us as a community and as business owners. As a
+            member you will receive a weekly e-mail informing you of important
+            events going on in the Rexburg area. Attending our forums is where
+            you can get to know other business owners, and professionals, as
+            well as learn what is going on in or community so you are aware of
+            changes and challenges, and opportunities you may want to know about
+            as a business.
+          </p>
+        </section>
+        <section class="membership-card card">
+          <h2>Gold</h2>
+          <p>
+            LEGISLATIVE ADVOCACY AND INFORMATION – The office keeps a file of
+            pending legislation and how it may affect your business. We also
+            e-mail this information out to members so they are kept updated.
+          </p>
+          <p>
+            TAXES – Your membership dues are a business expense and are tax
+            deductible. You will receive a full color membership shield to place
+            on your door or window to acknowledge Chamber membership and
+            participation.
+          </p>
+        </section>
+      </div>
     </main>
     <footer>
       <p>Contact Information</p>
