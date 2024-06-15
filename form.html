@@ -62,87 +62,91 @@
       </ul>
     </nav>
     <main>
-      <h1>Form</h1>
-      <form method="get" action="record.html">
-        <div>
-          <label
-            >Username:
-            <input type="text" id="username" name="username" required
-          /></label>
-        </div>
-        <div id="message"></div>
-        <div>
-          <label
-            >Password:
-            <input
-              type="password"
-              id="password"
-              name="password"
-              pattern="[A-Za-z0-9]{8,}"
-              title="Password must be at least 8 characters long."
-              required
-          /></label>
-        </div>
-        <div>
-          <label
-            >Re-enter your Password:
-            <input
-              type="password"
-              id="password2"
-              name="password2"
-              pattern="[A-Za-z0-9]{8,}"
-              required
-            />
-          </label>
-        </div>
+      <div class="form-wrapper">
+        <fieldset>
+          <h2>Form</h2>
+          <form method="get" action="record.html">
+            <div>
+              <label
+                >Username:
+                <input type="text" id="username" name="username" required
+              /></label>
+            </div>
+            <div id="message"></div>
+            <div>
+              <label
+                >Password:
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  pattern="[A-Za-z0-9]{8,}"
+                  title="Password must be at least 8 characters long."
+                  required
+              /></label>
+            </div>
+            <div>
+              <label
+                >Re-enter your Password:
+                <input
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  pattern="[A-Za-z0-9]{8,}"
+                  required
+                />
+              </label>
+            </div>
 
-        <div>
-          <label>
-            Email:
-            <input
-              type="email"
-              id="email"
-              name="email"
-              pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
-              title="Email must be a valid BYUI email address."
-              required
-            />
-          </label>
-        </div>
-        <div>
-          <label>
-            Page Rating
-            <div id="rangevalue">0</div>
-            <input
-              type="range"
-              id="rating"
-              name="rating"
-              min="1"
-              max="10"
-              value="0"
-              step="1"
-              list="rangevalues"
-            />
-            <datalist id="rangevalues">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </datalist>
-          </label>
-        </div>
-        <div>
-          <label>
-            <input type="submit" value="Join" />
-          </label>
-        </div>
-      </form>
+            <div>
+              <label>
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
+                  title="Email must be a valid BYUI email address."
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Page Rating
+                <div id="rangevalue">1</div>
+                <input
+                  type="range"
+                  id="rating"
+                  name="rating"
+                  min="1"
+                  max="10"
+                  value="1"
+                  step="1"
+                  list="rangevalues"
+                />
+                <datalist class="rangevalues" id="rangevalues">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </datalist>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="submit" value="Submit Rating" />
+              </label>
+            </div>
+          </form>
+        </fieldset>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-copyright-text">
