@@ -54,16 +54,6 @@ form label {
   padding: 0 0.9rem;
 }
 
-/* input[type="submit"] {
-  background-color: #4d5b97;
-  color: white;
-  padding: 0.5rem 1rem;
-} */
-
-/* ChatGPT CSS */
-
-/* Define root CSS variables */
-
 /* Form styles */
 
 form input[type="text"],
@@ -112,4 +102,12 @@ form input[type="submit"]:hover {
   form input[type="submit"] {
     width: auto;
   }
+}
+
+/* Thank you page styles */
+.thank-you-record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
