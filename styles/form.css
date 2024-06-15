@@ -32,7 +32,7 @@ form label {
 }
 
 #rating {
-  width: 200px;
+  /* width: 200px; */
   margin-bottom: 0;
 }
 
@@ -43,7 +43,7 @@ form label {
 #rangevalues {
   display: flex;
   justify-content: space-between;
-  width: 213px;
+  width: 109%;
 }
 
 #rangevalues option {
