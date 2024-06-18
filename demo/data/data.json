@@ -1,0 +1,17 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "age": 25,
+  "eyeColor": "blue",
+  "isMarried": false,
+  "children": [
+    {
+      "firstName": "Alice",
+      "age": 5
+    },
+    {
+      "firstName": "Bob",
+      "age": 7
+    }
+  ]
+}
