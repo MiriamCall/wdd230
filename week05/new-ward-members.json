@@ -1,0 +1,23 @@
+{
+  "familyName": "Smith",
+  "dateMovedIn": "2015-01-01",
+  "numberInFamily": 4,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "John",
+      "gender": "M",
+      "birthdate": "1980-01-01"
+    },
+    {
+      "name": "Jane",
+      "gender": "F",
+      "birthdate": "1982-02-02"
+    },
+    {
+      "name": "Jill",
+      "gender": "F",
+      "birthdate": "2000-03-03"
+    }
+  ]
+}
