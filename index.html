@@ -27,6 +27,7 @@
     <script src="./scripts/hamMenu.js" defer></script>
     <script src="./scripts/darkMode.js" defer></script>
     <script src="./scripts/localStorage.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -153,7 +154,14 @@
         <section class="card information-card">
           <h2 class="card-title information-card-title">Information</h2>
           <div class="info-container">
-            <p class="information-card-weather-text">Weather</p>
+            <p class="information-card-weather-text">
+              The current weather in Rexburg Idaho
+              <span id="current-temp"></span>
+            </p>
+            <figure>
+              <img id="weather-icon" src="" alt="" />
+              <figcaption></figcaption>
+            </figure>
             <div class="information-card-visits-text">
               <p>Visit Count: <span id="count">0</span></p>
             </div>

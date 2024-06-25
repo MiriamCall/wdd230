@@ -4,21 +4,21 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?lat=49.75115293012801&lon=6.645327868278036&appid=a1078278c70be949e15364ecfc53d10e&units=imperial";
-async function apiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // testing only
-      displayResults(data); // uncomment when ready
-    } else {
-      throw Error(await response.text());
+  // "https://api.openweathermap.org/data/2.5/weather?lat=49.75115293012801&lon=6.645327868278036&appid=a1078278c70be949e15364ecfc53d10e&units=imperial";
+  async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // uncomment when ready
+      } else {
+        throw Error(await response.text());
+      }
+    } catch (error) {
+      console.log(error);
     }
-  } catch (error) {
-    console.log(error);
-  }
-}
+  };
 
 apiFetch();
 
