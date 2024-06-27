@@ -1,6 +1,6 @@
-const baseURL = "https://github.com/MiriamCall/wdd230";
+const baseURL = "https://MiriamCall.github.io/wdd230/";
 
-const linksURL = "https://github.com/MiriamCall/wdd230/data.links.json";
+const linksURL = "https://MiriamCall.github.io/wdd230/data/links.json";
 
 async function getLinks() {
   const response = await fetch(linksURL);
@@ -8,10 +8,11 @@ async function getLinks() {
   console.log(data);
   displayLinks(data);
 }
+getLinks();
 
-function displayLinks(weeks) {
-  const links = document.querySelector(".ul");
-  weeks.forEach((link) => {
+function displayLinks(data) {
+  const links = document.querySelector("#links");
+  data.forEach((link) => {
     const linkItem = document.createElement("li");
     const linkElement = document.createElement("a");
     linkElement.setAttribute("href", `${baseURL}/${link.path}`);
@@ -20,5 +21,3 @@ function displayLinks(weeks) {
     links.appendChild(linkItem);
   });
 }
-
-getLinks();
