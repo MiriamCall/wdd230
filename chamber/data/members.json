@@ -1,58 +1,60 @@
-[
-  {
-    "name": "Madison Memorial Hospital",
-    "address": "450 E Main St, Rexburg, ID 83440",
-    "phone": "(208) 359-6900",
-    "website": "http://www.madisonmemorial.org",
-    "icon": "madisonmemorial.png",
-    "membershipLevel": "Platinum"
-  },
-  {
-    "name": "Broulim's Fresh Foods",
-    "address": "124 W Main St, Rexburg, ID 83440",
-    "phone": "(208) 356-4455",
-    "website": "http://www.broulims.com",
-    "icon": "broulims.png",
-    "membershipLevel": "Gold"
-  },
-  {
-    "name": "Fat Cats",
-    "address": "475 N 2nd E, Rexburg, ID 83440",
-    "phone": "(208) 359-2600",
-    "website": "http://www.fatcatsfun.com",
-    "icon": "fatcats.png",
-    "membershipLevel": "Silver"
-  },
-  {
-    "name": "Rexburg Chamber of Commerce",
-    "address": "127 E Main St, Rexburg, ID 83440",
-    "phone": "(208) 356-5700",
-    "website": "http://www.rexburgchamber.org",
-    "icon": "rexburgchamber.png",
-    "membershipLevel": "Gold"
-  },
-  {
-    "name": "Deseret Industries",
-    "address": "611 N 2nd E, Rexburg, ID 83440",
-    "phone": "(208) 656-0720",
-    "website": "http://www.deseretindustries.org",
-    "icon": "deseretindustries.png",
-    "membershipLevel": "Silver"
-  },
-  {
-    "name": "Rexburg Motor Sports",
-    "address": "1178 University Blvd, Rexburg, ID 83440",
-    "phone": "(208) 356-4000",
-    "website": "http://www.rexburgmotorsports.com",
-    "icon": "rexburgmotorsports.png",
-    "membershipLevel": "Gold"
-  },
-  {
-    "name": "KJ's Super Stores",
-    "address": "55 W Main St, Rexburg, ID 83440",
-    "phone": "(208) 356-7788",
-    "website": "http://www.kjssuperstores.com",
-    "icon": "kjssuperstores.png",
-    "membershipLevel": "Gold"
-  }
-]
+{
+  "members": [
+    {
+      "name": "Madison Memorial Hospital",
+      "address": "450 E Main St, Rexburg, ID 83440",
+      "phone": "(208) 359-6900",
+      "website": "http://www.madisonmemorial.org",
+      "icon": "madisonmemorial.png",
+      "membershipLevel": "Platinum"
+    },
+    {
+      "name": "Broulim's Fresh Foods",
+      "address": "124 W Main St, Rexburg, ID 83440",
+      "phone": "(208) 356-4455",
+      "website": "http://www.broulims.com",
+      "icon": "broulims.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Fat Cats",
+      "address": "475 N 2nd E, Rexburg, ID 83440",
+      "phone": "(208) 359-2600",
+      "website": "http://www.fatcatsfun.com",
+      "icon": "fatcats.png",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Rexburg Chamber of Commerce",
+      "address": "127 E Main St, Rexburg, ID 83440",
+      "phone": "(208) 356-5700",
+      "website": "http://www.rexburgchamber.org",
+      "icon": "rexburgchamber.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Deseret Industries",
+      "address": "611 N 2nd E, Rexburg, ID 83440",
+      "phone": "(208) 656-0720",
+      "website": "http://www.deseretindustries.org",
+      "icon": "deseretindustries.png",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Rexburg Motor Sports",
+      "address": "1178 University Blvd, Rexburg, ID 83440",
+      "phone": "(208) 356-4000",
+      "website": "http://www.rexburgmotorsports.com",
+      "icon": "rexburgmotorsports.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "KJ's Super Stores",
+      "address": "55 W Main St, Rexburg, ID 83440",
+      "phone": "(208) 356-7788",
+      "website": "http://www.kjssuperstores.com",
+      "icon": "kjssuperstores.png",
+      "membershipLevel": "Gold"
+    }
+  ]
+}
