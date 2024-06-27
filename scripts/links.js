@@ -6,28 +6,41 @@ async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
   console.log(data);
-  displayLinks(data.weeks);
+  displayLearningList(data.weeks);
 }
 getLinks();
 
-function displayLinks(data) {
-  const links = document.querySelector("#links");
-  data.forEach((week) => {
-    const weekItem = document.createElement("li");
-    weekItem.textContent = week.week;
+function displayLearningList(weeks) {
+  const learningList = document.querySelector("#learning-list");
 
-    week.links.forEach((link) => {
-      const linkItem = document.createElement("li");
+  // Clear any existing content from the list
+  learningList.innerHTML = "";
+
+  // Loop through the weeks
+  weeks.forEach((weekData) => {
+    // Create a list item for each week.
+    // Give class name 'learning-card-list-item' to each item
+    const weekItem = document.createElement("li");
+    weekItem.classList.add("learning-card-list-item");
+    weekItem.textContent = `Week ${weekData.week}: `;
+
+    weekData.links.forEach((link, index) => {
+      // Create a element for each link
       const linkElement = document.createElement("a");
-      linkElement.setAttribute("href", `${baseURL}/${link.path}`);
-      linkElement.textContent = link.label;
-      linkItem.appendChild(linkElement);
-      weekItem.appendChild(linkItem);
+      linkElement.setAttribute("href", link.url);
+      linkElement.classList.add("learning-link");
+      linkElement.textContent = link.title;
+
+      // Append the link to the week item
+      weekItem.appendChild(linkElement);
+
+      // If not the last link, add a separator
+      if (index < weekData.links.length - 1) {
+        weekItem.appendChild(document.createTextNode(" | "));
+      }
     });
-    //   const linkElement = document.createElement("a");
-    //   linkElement.setAttribute("href", `${baseURL}/${link.path}`);
-    //   linkElement.textContent = link.label;
-    //   linkItem.appendChild(linkElement);
-    //   links.appendChild(linkItem);
+
+    // Append the week item to the learning list ul
+    learningList.appendChild(weekItem);
   });
 }
