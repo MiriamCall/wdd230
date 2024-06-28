@@ -30,7 +30,7 @@ function displayMembers(members) {
   memberCards = members.map((member) => {
     return `
     <div class="member-card">
-      <img src="${member.image}" alt="${member.name}" />
+      <img src="${member.image}" alt="${member.name}" height="50" />
       <h2>${member.name}</h2>
       <p>${member.website}</p>
     </div>
