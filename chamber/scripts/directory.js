@@ -22,7 +22,7 @@ async function getMemberData() {
   const data = await response.json();
 
   console.table(data.members);
-  console.log(data.members[0].image);
+  console.log(data.members[0].name);
   displayMembers(data.members);
 }
 
@@ -30,10 +30,10 @@ function displayMembers(members) {
   memberCards = members.map((member) => {
     return `
     <div class="member-card">
-      <img src="images/${member.image}" alt="${member.name}" />
+      <img src="${member.image}" alt="${member.name}" />
       <h2>${member.name}</h2>
-      <p>${member.email}</p>
       <p>${member.website}</p>
+    </div>
     `;
   });
   membersDisplay.innerHTML = memberCards.join("");
