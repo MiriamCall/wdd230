@@ -1,5 +1,5 @@
 const url =
-  "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/memberData.json";
+  "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
