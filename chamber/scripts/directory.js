@@ -21,13 +21,12 @@ async function getMemberData() {
   const response = await fetch(url);
   const data = await response.json();
 
-  // console.table(data.members);
+  console.table(data.members);
   displayMembers(data.members);
 }
 
 function displayMembers(members) {
   memberCards = members.map((member) => {
-    console.log("Testing");
     return `
     <div class="member-card">
       <img src="images/${member.image}" alt="${member.name}" />
