@@ -1,5 +1,5 @@
 const url =
-  "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
+  "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/memberData.json";
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
@@ -22,6 +22,7 @@ async function getMemberData() {
   const data = await response.json();
 
   console.table(data.members);
+  console.log(data.members[0].image);
   displayMembers(data.members);
 }
 
