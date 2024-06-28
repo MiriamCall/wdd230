@@ -1,26 +1,42 @@
-const URL =
+const url =
   "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
-
-async function getMemberData() {
-  const response = await fetch(url);
-  const data = await response.json();
-
-  console.table(data.members);
-  displayProphets(data.members);
-}
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("#article");
+const membersDisplay = document.querySelector("#members-display");
 
 gridbutton.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
+  membersDisplay.classList.add("grid");
+  membersDisplay.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-  display.classList.add("list");
-  display.classList.remove("grid");
+  membersDisplay.classList.add("list");
+  membersDisplay.classList.remove("grid");
 }
+
+async function getMemberData() {
+  const response = await fetch(url);
+  const data = await response.json();
+
+  // console.table(data.members);
+  displayMembers(data.members);
+}
+
+function displayMembers(members) {
+  memberCards = members.map((member) => {
+    console.log("Testing");
+    return `
+    <div class="member-card">
+      <img src="images/${member.image}" alt="${member.name}" />
+      <h2>${member.name}</h2>
+      <p>${member.email}</p>
+      <p>${member.website}</p>
+    `;
+  });
+  membersDisplay.innerHTML = memberCards.join("");
+}
+
+getMemberData();
