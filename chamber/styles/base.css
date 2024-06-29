@@ -289,6 +289,10 @@ main p {
   text-align: left;
 }
 
+.list > .member-card:nth-child(odd) {
+  background-color: lightgray;
+}
+
 .member-card {
   border: 2px solid lightgray;
   border-radius: 6px;

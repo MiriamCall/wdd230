@@ -58,7 +58,4 @@
     margin: 0;
     padding: 0.25rem;
   }
-  .list > .member-card:nth-child(even) {
-    background-color: #bed;
-  }
 }
