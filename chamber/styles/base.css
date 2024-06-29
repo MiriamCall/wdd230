@@ -98,6 +98,7 @@ body {
   content: "x";
 }
 
+/* PLEASE CHANGE THIS TO BE MORE SPECIFIC USING A CLASS!!!!!! */
 main h1 {
   display: flex;
   flex-direction: column;
@@ -106,6 +107,7 @@ main h1 {
   font-size: 3rem;
 }
 
+/* PLEASE CHANGE THIS TO BE MORE SPECIFIC USING A CLASS!!!!!! */
 main {
   padding: 1rem;
 }
@@ -113,11 +115,12 @@ main {
 /* Main Title Styles */
 
 /* discover h2 */
-h2 {
+/* PLEASE CHANGE THIS TO BE MORE SPECIFIC USING A CLASS!!!!!! */
+/* h2 {
   font-size: 2rem;
   text-align: center;
   margin: 1rem;
-}
+} */
 
 /* Card Styles */
 .card {
@@ -252,6 +255,7 @@ footer {
   border: solid 2px green;
 }
 
+/* PLEASE CHANGE THIS TO BE MORE SPECIFIC USING A CLASS!!!!!! */
 main p {
   padding: 0 1rem;
 }
@@ -272,9 +276,17 @@ main p {
   font-weight: 700;
 }
 
-.directory-list {
+.list {
   display: flex;
   flex-direction: column;
+}
+
+.list img {
+  display: none;
+}
+
+.list .member-card {
+  text-align: left;
 }
 
 .member-card {
@@ -283,6 +295,12 @@ main p {
   padding: 1rem;
   margin: 0.5rem;
   text-align: center;
+}
+
+.member-card h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0 1rem;
 }
 
 .menu {
