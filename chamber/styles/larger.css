@@ -47,4 +47,26 @@
   .grid h2 {
     display: none;
   }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .list > .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+  }
+  .list > .member-card:nth-child(even) {
+    background-color: #bed;
+  }
+
+  .member-card h2 {
+    font-size: 1rem;
+  }
+
+  .list img {
+    display: none;
+  }
 }
