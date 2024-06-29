@@ -265,11 +265,6 @@ main p {
 
 /* Directory Styles */
 .directory-main {
-  margin: 0 auto;
-  padding: 0.5rem;
-  max-width: 700px;
-  background-color: #fff;
-  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .directory-menu button {
@@ -277,14 +272,21 @@ main p {
   font-weight: 700;
 }
 
-.directory-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5px;
-  align-items: center;
-}
-
 .directory-list {
   display: flex;
   flex-direction: column;
+}
+
+.member-card {
+  border: 2px solid lightgray;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
