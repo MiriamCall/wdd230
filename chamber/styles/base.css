@@ -312,3 +312,25 @@ main p {
   justify-content: center;
   margin: 1rem;
 }
+
+/* Banner styles */
+.banner {
+  display: none; /* Initially hide the banner */
+  background-color: lightblue;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+.banner .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
