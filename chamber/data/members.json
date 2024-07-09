@@ -1,60 +1,58 @@
-{
-  "members": [
-    {
-      "name": "Madison Memorial Hospital",
-      "address": "450 E Main St, Rexburg, ID 83440",
-      "phone": "(208) 359-6900",
-      "website": "http://www.madisonmemorial.org",
-      "image": "https://madisonmemorial.org/wp-content/uploads/MadisonMemorialLogo.gif",
-      "membershipLevel": "Bronze"
-    },
-    {
-      "name": "Broulim's Fresh Foods",
-      "address": "124 W Main St, Rexburg, ID 83440",
-      "phone": "(208) 356-4455",
-      "website": "http://www.broulims.com",
-      "image": "https://image-cdn.rosieapp.com/logos/83/service_logo_9304d8b5-91b1-4396-b6b9-f269b3cc457a.png",
-      "membershipLevel": "Gold"
-    },
-    {
-      "name": "Fat Cats",
-      "address": "475 N 2nd E, Rexburg, ID 83440",
-      "phone": "(208) 359-2600",
-      "website": "http://www.fatcatsfun.com",
-      "image": "https://rexburgchamber.org/wp-content/uploads/2022/05/fat-cats.jpg",
-      "membershipLevel": "Bronze"
-    },
-    {
-      "name": "Rexburg Chamber of Commerce",
-      "address": "127 E Main St, Rexburg, ID 83440",
-      "phone": "(208) 356-5700",
-      "website": "http://www.rexburgchamber.org",
-      "image": "https://rexburgchamber.org/wp-content/uploads/2022/02/ChamberLogo-1024x320-1.png",
-      "membershipLevel": "Gold"
-    },
-    {
-      "name": "Deseret Industries",
-      "address": "611 N 2nd E, Rexburg, ID 83440",
-      "phone": "(208) 656-0720",
-      "website": "http://www.deseretindustries.org",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vDX6e6We-2uR9Dz_w4hjokXeTgV8s6cOVA&s",
-      "membershipLevel": "Silver"
-    },
-    {
-      "name": "Rexburg Motor Sports",
-      "address": "1178 University Blvd, Rexburg, ID 83440",
-      "phone": "(208) 356-4000",
-      "website": "http://www.rexburgmotorsports.com",
-      "image": "https://www.rexburgmotorsports.com/portals/rexburgmotorsports/skins/rexburgmotorsports-wildriversport-mudslide/images/logo_rexburg.png",
-      "membershipLevel": "Silver"
-    },
-    {
-      "name": "Paramount 5",
-      "address": "38 S Center St, Rexburg, ID 83440",
-      "phone": "(208) 356-7469",
-      "website": "https://rexburgmovies.com/paramount-5",
-      "image": "https://yc.cldmlk.com/q17fc3f80aennyh1vzwhj2wmj8/1511410264212_para5.png",
-      "membershipLevel": "Gold"
-    }
-  ]
-}
+[
+  {
+    "name": "Madison Memorial Hospital",
+    "address": "450 E Main St, Rexburg, ID 83440",
+    "phone": "(208) 359-6900",
+    "website": "http://www.madisonmemorial.org",
+    "image": "https://madisonmemorial.org/wp-content/uploads/MadisonMemorialLogo.gif",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Broulim's Fresh Foods",
+    "address": "124 W Main St, Rexburg, ID 83440",
+    "phone": "(208) 356-4455",
+    "website": "http://www.broulims.com",
+    "image": "https://image-cdn.rosieapp.com/logos/83/service_logo_9304d8b5-91b1-4396-b6b9-f269b3cc457a.png",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Fat Cats",
+    "address": "475 N 2nd E, Rexburg, ID 83440",
+    "phone": "(208) 359-2600",
+    "website": "http://www.fatcatsfun.com",
+    "image": "https://rexburgchamber.org/wp-content/uploads/2022/05/fat-cats.jpg",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Rexburg Chamber of Commerce",
+    "address": "127 E Main St, Rexburg, ID 83440",
+    "phone": "(208) 356-5700",
+    "website": "http://www.rexburgchamber.org",
+    "image": "https://rexburgchamber.org/wp-content/uploads/2022/02/ChamberLogo-1024x320-1.png",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Deseret Industries",
+    "address": "611 N 2nd E, Rexburg, ID 83440",
+    "phone": "(208) 656-0720",
+    "website": "http://www.deseretindustries.org",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vDX6e6We-2uR9Dz_w4hjokXeTgV8s6cOVA&s",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Rexburg Motor Sports",
+    "address": "1178 University Blvd, Rexburg, ID 83440",
+    "phone": "(208) 356-4000",
+    "website": "http://www.rexburgmotorsports.com",
+    "image": "https://www.rexburgmotorsports.com/portals/rexburgmotorsports/skins/rexburgmotorsports-wildriversport-mudslide/images/logo_rexburg.png",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Paramount 5",
+    "address": "38 S Center St, Rexburg, ID 83440",
+    "phone": "(208) 356-7469",
+    "website": "https://rexburgmovies.com/paramount-5",
+    "image": "https://yc.cldmlk.com/q17fc3f80aennyh1vzwhj2wmj8/1511410264212_para5.png",
+    "membershipLevel": "Gold"
+  }
+]

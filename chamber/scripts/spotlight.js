@@ -1,15 +1,17 @@
-const url =
-  "https://https://raw.githubusercontent.com/MiriamCall/wdd230/main/data/links.json";
+const url = "http://127.0.0.1:5500/chamber/data/members.json";
 
 async function getMemberData() {
   try {
     const response = await fetch(url);
     const data = await response.json();
 
-    // Filter members with silver or gold membership
-    const filteredMembers = data.filter(
-      (member) => member.membership === "silver" || member.membership === "gold"
-    );
+    // Display membership of each member
+    data.forEach((member) => {
+      console.log(`${member.name} (${member.membershipLevel})`);
+      // const memberDiv = document.createElement("div");
+      // memberDiv.textContent = `${member.name} (${member.membership})`;
+      // document.body.appendChild(memberDiv);
+    });
 
     // Randomly select 2 or 3 members
     function getRandomMembers(arr, num) {
