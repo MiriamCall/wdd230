@@ -23,9 +23,9 @@
       content="https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/images/rexburg_image.webp"
     />
     <title>Chamber</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
     <link
       rel="shortcut icon"
       href="images/chamber-favicon.ico"
@@ -33,8 +33,7 @@
     />
     <script src="./scripts/weather.js" defer></script>
     <script src="./scripts/banner.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <!--<script src="./scripts/spotlights.js" defer></script>-->
+    <script src="./scripts/spotlight.js" defer></script>
   </head>
   <body>
     <script src="./scripts/hamMenu.js" defer></script>
@@ -85,13 +84,7 @@
         </figure>
         <div id="weather-forecast" class="weather-forecast"></div>
       </section>
-      <section class="spotlights-card card">
-        <h2 class="spotlights-card-title card-title">Spotlights</h2>
-        <div class="spotlights"></div>
-        <p>spotlight #1</p>
-        <p>spotlight #2</p>
-        <p>spotlight #3</p>
-      </section>
+      <section id="spotlight-section" class="spotlights-card card"></section>
     </main>
     <footer>
       <p>Contact Information</p>

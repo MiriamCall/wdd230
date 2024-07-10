@@ -1,37 +1,101 @@
-const url = "http://127.0.0.1:5500/chamber/data/members.json";
+// url to fetch the json data from
+const url =
+  "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
 
-async function getMemberData() {
+// select the spotlight section in the html
+const spotlightSection = document.querySelector("#spotlight-section");
+
+// fetch the json data
+const getMemberData = async () => {
+  // fetch the json data from the url
+  const response = await fetch(url);
+
+  // store the json data in the data variable
+  const data = await response.json();
+  console.log("Member data from fetch request:");
+  console.table(data);
+
+  return data;
+};
+
+const displaySpotLights = async () => {
   try {
-    const response = await fetch(url);
-    const data = await response.json();
+    // Get the member data
+    const members = await getMemberData();
 
-    // Display membership of each member
-    data.forEach((member) => {
-      console.log(`${member.name} (${member.membershipLevel})`);
-      // const memberDiv = document.createElement("div");
-      // memberDiv.textContent = `${member.name} (${member.membership})`;
-      // document.body.appendChild(memberDiv);
-    });
-
-    // Randomly select 2 or 3 members
-    function getRandomMembers(arr, num) {
-      const shuffled = arr.sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, num);
+    // check if the data exists
+    if (members === undefined) {
+      // throw an error if the data does not exist
+      throw new Error("No member data found");
     }
 
-    const spotlightMembers = getRandomMembers(filteredMembers, 3);
+    // check if the data is an array
+    if (!Array.isArray(members)) {
+      // throw an error if the data is not an array
+      throw new Error("Invalid member data");
+    }
 
-    // Display selected members on the home page
-    const spotlightContainer = document.getElementById("spotlights");
-    spotlightMembers.forEach((member) => {
-      const memberDiv = document.createElement("div");
-      memberDiv.textContent = `${member.name} (${member.membership})`;
-      spotlightContainer.appendChild(memberDiv);
+    // filter members with membership level of silver or gold
+    const spotlightMembers = members.filter((member) => {
+      return (
+        // check if the membership level is silver or gold
+        member.membershipLevel === "Silver" || member.membershipLevel === "Gold"
+      );
     });
-  } catch (error) {
-    console.error("Error fetching member data:", error);
-  }
-}
 
-// Call the function to fetch and display member data
-getMemberData();
+    // console log statement to check the spotlight members
+    console.log("Spotlight Members: ");
+    console.table(spotlightMembers);
+
+    // check if there are no spotlight members
+    if (spotlightMembers.length === 0) {
+      throw new Error(
+        "No spotlight members with Silver of Gold Memberships were found"
+      );
+    }
+
+    // randomize the order of the spotlight members
+    const randomizedSpotlightMembers = spotlightMembers.sort(
+      () => Math.random() - 0.5
+    );
+
+    // console log statement to check the randomized spotlight members
+    console.log("Randomized Spotlight Members: ");
+    console.table(randomizedSpotlightMembers);
+
+    let spotLightHtml =
+      '<h2 class="spotlights-card-title card-title">Spotlights</h2>';
+
+    // loop through the first 3 spotlight members
+    for (let i = 0; i < 3; i++) {
+      // get the member at the current index of the randomized spotlight members
+      const member =
+        randomizedSpotlightMembers[i % randomizedSpotlightMembers.length];
+
+      // console log statement to check the spotlight member
+      console.log("Spotlight Member: ");
+      console.table(member);
+
+      // add the spotlight member to the spotlight html using string interpolation
+      spotLightHtml += `
+      <div class="spotlight">
+        <h3>${member.name}</h3>
+        <img src="${member.image}" alt="${member.name}" width="150"/>
+      </div>
+      `;
+    }
+
+    // console log statement to check the spotlight html
+    console.log("Spotlight HTML: ");
+    console.log(spotLightHtml);
+
+    // set the inner html of the spotlight section to the spotlight html
+    spotlightSection.innerHTML = spotLightHtml;
+  } catch (error) {
+    // log the error message to the console
+    console.error(error.message);
+  }
+};
+
+// call the displaySpotLights function
+displaySpotLights();
