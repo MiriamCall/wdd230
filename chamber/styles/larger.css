@@ -17,9 +17,10 @@
     display: none;
   }
 
+  /* directory larger styles */
   .discover-sections {
     column-count: 2;
-    column-gap: normal;
+    gap: normal;
   }
 
   /* picture hover */

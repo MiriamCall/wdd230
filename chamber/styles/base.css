@@ -182,6 +182,25 @@ footer {
 }
 
 /* Form Styles */
+
+.membershiph2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.bronze {
+  color: #cd7f32;
+}
+
+.silver {
+  color: #71706e;
+}
+
+.gold {
+  color: #ffd700;
+}
+
 .wf1 fieldset {
   margin: 1rem 0;
   border: 1px solid #ddd;
