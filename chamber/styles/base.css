@@ -29,22 +29,6 @@ ul {
   width: 100%;
 }
 
-.join-btn-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-/* Centered button */
-.join-button {
-  background-color: #006eb8;
-  color: white;
-  border: none;
-  /* padding: 0.2rem 0.5rem; */
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -120,6 +104,18 @@ main {
   padding: 1rem;
 }
 
+.join-button {
+  background-color: #006eb8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 /* Main Title Styles */
 
 /* discover h2 */
@@ -188,14 +184,20 @@ footer {
   text-align: center;
 }
 
+.join-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .join-btn {
   background-color: #006eb8;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 1.25rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* Form Styles */
