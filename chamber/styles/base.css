@@ -9,9 +9,11 @@ ul {
 /* header styles */
 .header {
   text-align: center;
-  background-image: url("../images/rexburg_image.webp");
+  background-image: url("../images/karsten-wurth-UbGYPMbMYP8-unsplash.webp");
   background-size: cover;
-  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
 }
 
 .join-button-container {
@@ -27,11 +29,17 @@ ul {
   width: 100%;
 }
 
+.join-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Centered button */
 .join-button {
   background-color: #006eb8;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  /* padding: 0.2rem 0.5rem; */
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.5rem;
@@ -46,7 +54,7 @@ body {
 /* nav menu item styles */
 .nav-menu-item {
   display: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -56,7 +64,7 @@ body {
 .nav-menu-item-link {
   text-decoration: none;
   color: black;
-  padding: 0.5rem;
+  padding: 0.5rem 9rem;
 }
 
 /* nav menu item hover styles */
@@ -177,15 +185,24 @@ footer {
 
 .join-info {
   font-size: 1.1rem;
-  font-weight: 600;
   text-align: center;
+}
+
+.join-btn {
+  background-color: #006eb8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 /* Form Styles */
 
 .membershiph2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 1rem;
 }
 
@@ -286,7 +303,21 @@ main p {
   background-color: white;
 }
 
+.join-title {
+  padding: 1rem;
+  font-size: 2.25rem;
+  background-color: inherit;
+  text-align: center;
+}
+
 /* Directory Styles */
+
+.directory-title {
+  padding: 1rem;
+  font-size: 2.5rem;
+  background-color: inherit;
+  text-align: center;
+}
 
 .directory-menu button {
   padding: 1rem;

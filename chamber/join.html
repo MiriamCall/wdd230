@@ -35,25 +35,27 @@
     <script src="./scripts/timestamp.js" defer></script>
   </head>
   <body>
-    <nav class="nav">
-      <span id="menu"></span>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a class="nav-menu-item-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-item-link" href="./discover.html">Discover</a>
-        </li>
-        <li class="nav-menu-item active">
-          <a class="nav-menu-item-link" href="./join.html">Join</a>
-        </li>
-        <li class="nav-menu-item">
-          <a class="nav-menu-item-link" href="./directory.html">Directory</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="nav">
+        <span id="menu"></span>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a class="nav-menu-item-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-item-link" href="./discover.html">Discover</a>
+          </li>
+          <li class="nav-menu-item active">
+            <a class="nav-menu-item-link" href="./join.html">Join</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-item-link" href="./directory.html">Directory</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="join-title">Join the Chamber</h1>
+    </header>
     <main class="join-page-main">
-      <h2>Join the Chamber</h2>
       <p class="join-info">
         The Rexburg Area Chamber of Commerce is a membership-based organization
         that supports and promotes local businesses. We are dedicated to
@@ -141,8 +143,9 @@
               name="formLoadTimeStamp"
               id="formLoadTimeStamp"
             />
-
-            <input class="input-field" type="submit" value="Join Now" />
+            <div class="join-btn-wrapper">
+              <button class="join-btn" type="submit">Join Now</button>
+            </div>
           </fieldset>
         </form>
         <div class="membership-cards-wrapper">
@@ -154,7 +157,6 @@
               opportunities. Please select the level that best fits your needs.
             </p>
           </div>
-
           <section class="membership-card card">
             <h2 class="bronze">Bronze</h2>
             <p>
