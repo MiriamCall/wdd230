@@ -1,5 +1,5 @@
 // url to fetch the json data from
-const url =
+const memberurl =
   "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
 
 // select the spotlight section in the html
@@ -8,7 +8,7 @@ const spotlightSection = document.querySelector("#spotlight-section");
 // fetch the json data
 const getMemberData = async () => {
   // fetch the json data from the url
-  const response = await fetch(url);
+  const response = await fetch(memberurl);
 
   // store the json data in the data variable
   const data = await response.json();
