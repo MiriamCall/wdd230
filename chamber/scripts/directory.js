@@ -21,8 +21,8 @@ async function getMemberData() {
   const response = await fetch(url);
   const data = await response.json();
 
-  console.table(data);
-  console.log(data[0].name);
+  // console.table(data);
+  // console.log(data[0].name);
   displayMembers(data);
 }
 

@@ -12,8 +12,9 @@ const getMemberData = async () => {
 
   // store the json data in the data variable
   const data = await response.json();
-  console.log("Member data from fetch request:");
-  console.table(data);
+
+  // console.log("Member data from fetch request:");
+  // console.table(data);
 
   return data;
 };
@@ -44,8 +45,8 @@ const displaySpotLights = async () => {
     });
 
     // console log statement to check the spotlight members
-    console.log("Spotlight Members: ");
-    console.table(spotlightMembers);
+    // console.log("Spotlight Members: ");
+    // console.table(spotlightMembers);
 
     // check if there are no spotlight members
     if (spotlightMembers.length === 0) {
@@ -60,8 +61,8 @@ const displaySpotLights = async () => {
     );
 
     // console log statement to check the randomized spotlight members
-    console.log("Randomized Spotlight Members: ");
-    console.table(randomizedSpotlightMembers);
+    // console.log("Randomized Spotlight Members: ");
+    // console.table(randomizedSpotlightMembers);
 
     let spotLightHtml =
       '<h2 class="spotlights-card-title card-title">Spotlights</h2>';
@@ -73,8 +74,8 @@ const displaySpotLights = async () => {
         randomizedSpotlightMembers[i % randomizedSpotlightMembers.length];
 
       // console log statement to check the spotlight member
-      console.log("Spotlight Member: ");
-      console.table(member);
+      // console.log("Spotlight Member: ");
+      // console.table(member);
 
       // add the spotlight member to the spotlight html using string interpolation
       spotLightHtml += `
@@ -86,8 +87,8 @@ const displaySpotLights = async () => {
     }
 
     // console log statement to check the spotlight html
-    console.log("Spotlight HTML: ");
-    console.log(spotLightHtml);
+    // console.log("Spotlight HTML: ");
+    // console.log(spotLightHtml);
 
     // set the inner html of the spotlight section to the spotlight html
     spotlightSection.innerHTML = spotLightHtml;
