@@ -3,7 +3,7 @@ const memberurl =
   "https://raw.githubusercontent.com/MiriamCall/wdd230/main/chamber/data/members.json";
 
 // select the spotlight section in the html
-const spotlightSection = document.querySelector("#spotlight-section");
+const spotlights = document.querySelector("#spotlights");
 
 // fetch the json data
 const getMemberData = async () => {
@@ -65,7 +65,7 @@ const displaySpotLights = async () => {
     // console.table(randomizedSpotlightMembers);
 
     let spotLightHtml =
-      '<h2 class="spotlights-card-title card-title">Spotlights</h2>';
+      '';
 
     // loop through the first 3 spotlight members
     for (let i = 0; i < 3; i++) {
@@ -91,7 +91,7 @@ const displaySpotLights = async () => {
     // console.log(spotLightHtml);
 
     // set the inner html of the spotlight section to the spotlight html
-    spotlightSection.innerHTML = spotLightHtml;
+    spotlights.innerHTML = spotLightHtml;
   } catch (error) {
     // log the error message to the console
     console.error(error.message);
